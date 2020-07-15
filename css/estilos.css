@@ -30,11 +30,7 @@ img {
   margin-top: 75px;
   font-size: 40px;
   overflow-y: hidden;
-  animation: bounce 1.8s ease;
-}
-@keyframes bounce {
-  0% {margin-top: -200px;}
-  100% {margin-top: 75px;}
+  margin-top: -200px;
 }
 .h2{
   text-align: center;
@@ -178,6 +174,7 @@ img {
   margin:  auto;
   padding: 80px 0;
   text-align: justify;
+  font-size: 17px;
   position: relative;
 }
 .about__texto::after{
@@ -204,7 +201,7 @@ img {
 .imagen{
   width: 100%;
   height: 250px;
-  background-image: url("../img/parallax2.jpg");
+  background-image: url("../img/parallax.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -277,12 +274,19 @@ img {
 .desplegable{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 200px;
 }
 .seleccionado{
   filter: grayscale(1);
 }
+.bajar{
+  animation: bounce 1.8s ease;
+  }
+  @keyframes bounce {
+    0% {margin-top: -200px;}
+    100% {margin-top: 75px;}
+  }
 @media (min-width: 425px){
  .skills__ul{
   flex-direction: row;
@@ -316,7 +320,7 @@ img {
     content: '';
     position: absolute;
     bottom: 0px;
-    left: -100px;
+    left: -100%;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -351,7 +355,7 @@ img {
   .galeria__li{
     padding: 15px 24.3px;
   }
-  .about__texto::after{
+  .__texto::after{
     font-size: 36px;
     top: 48px;
   }
