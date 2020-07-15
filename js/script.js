@@ -1,11 +1,17 @@
+
+/* efecto de bajar h1*/
+const titulo = document.getElementById('titulo');
+window.addEventListener('load', () =>{
+  titulo.classList.add('bajar');
+})
+/*Menu responsive*/
 const burger = document.getElementById('burger'),
  nav__ul = document.getElementById('nav__ul');
 
 burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
- console.log("biennn");
 })
-
+/*Efecto portafolio*/
 const btn1 = document.getElementById('btn1'),
  btn2 = document.getElementById('btn2'),
  btn3 = document.getElementById('btn3'),
