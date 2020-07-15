@@ -1,4 +1,3 @@
-
 /* efecto de bajar h1*/
 const titulo = document.getElementById('titulo');
 window.addEventListener('load', () =>{
@@ -11,6 +10,11 @@ const burger = document.getElementById('burger'),
 burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
 })
+/*refrecar web*/
+window.addEventListener("resize", myFunction);
+function myFunction() {
+    window.location.reload(true);
+}
 /*Efecto portafolio*/
 const btn1 = document.getElementById('btn1'),
  btn2 = document.getElementById('btn2'),
