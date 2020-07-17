@@ -160,6 +160,9 @@ img {
   background-position: center;
   object-fit: cover;
 }
+.wrapper__img:hover{
+  cursor: pointer;
+}
 .about__titulo{
   width: 90%;
   margin: 30px auto 20px auto;
@@ -413,28 +416,29 @@ img {
     height: 100%;
     object-fit: cover;
   }
+  /*
   .grid4{
     grid-column: 2/3;
     grid-row: 2;
     align-self: stretch;
     height: 100%;
     object-fit: cover;
-  }
-  .grid5{
+  }*/
+  .grid4{
     grid-column: 2/4;
     grid-row: 2;
     align-self: stretch;
     height: 100%;
     object-fit: cover;
   }
-  .grid6{
+  .grid5{
     grid-column: 1;
     grid-row: 3;
     align-self: stretch;
     height: 100%;
     object-fit: cover;
   }
-  .grid7{
+  .grid6{
     grid-column: 2/4;
     grid-row: 3;
     align-self: stretch;
