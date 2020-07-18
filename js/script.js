@@ -15,6 +15,33 @@ window.addEventListener("resize", myFunction);
 function myFunction() {
     window.location.reload(true);
 }
+/*Enlaces web*/
+const grid1 = document.getElementsByClassName('grid1'),
+      grid2 = document.getElementsByClassName('grid2'),
+      grid3 = document.getElementsByClassName('grid3'),
+      grid4 = document.getElementsByClassName('grid4'),
+      grid5 = document.getElementsByClassName('grid5'),
+      grid6 = document.getElementsByClassName('grid6');
+
+grid1[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/anton/', '_blank');
+})
+grid2[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/educa/', '_blank');
+})
+grid3[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/grid/', '_blank');
+})
+grid4[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/axis/', '_blank');
+})
+grid5[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/designer/', '_blank');
+})
+grid6[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/corp/', '_blank');
+})
+
 /*Efecto portafolio*/
 const btn1 = document.getElementById('btn1'),
  btn2 = document.getElementById('btn2'),
