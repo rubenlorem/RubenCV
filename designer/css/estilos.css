@@ -199,7 +199,7 @@ template {
   bottom: 170px;
   color: white;
   text-transform: uppercase;
-   animation-delay: 0.5s;
+   animation-delay: 1s;
   }
   .header__p{
     width: 250px;
@@ -212,7 +212,7 @@ template {
      padding: 10px 4px 10px 4px;
      border: 2px outset white;;
     border-radius: 7px;
-       animation-delay: 0.5s;
+       animation-delay: 1s;
 
   }
   .main{
