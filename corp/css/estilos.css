@@ -1,0 +1,454 @@
+/*************Boiler plate de Ruben Marquez*****************************/
+/***esta hoja de estilos intenta seguir seguir la metodologia BEM Y ITCSS*******/
+/*******************Control tipografias y paleta*********************************/
+/*https://www.modularscale.com/?16&px&1.618*/
+
+:root {
+    --escala-h1: 67.77px;
+    --escala-h2: 41.88px;
+    --escala-h3: 25.88px;
+    --escala-h4: 9.88px;
+    --escala-h5: 6.11px;
+
+    --color-negro: #262626;
+    --color-primario:;
+    --color-secundario:;
+
+}
+
+/***********************Reset de elementos***********************************/
+html{
+	  line-height: 1.15; /* 1 */
+}
+
+body{
+	font-family: 'Fugaz One', 'Kanit', sans-serif;
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0px;
+  overflow-wrap: break-word;
+}
+
+li{
+   list-style: none;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+figure{
+	margin: 0px;
+}
+
+img{
+	max-width: 100%;
+	display:block;
+}
+
+a{
+	text-decoration: none;
+	color: transparent;
+}
+
+img {
+  border-style: none;
+}
+
+/************Normalaizer**************************/
+/*solo parte de formularios */
+/*https://github.com/sindresorhus/modern-normalize*/
+/* Forms======================================================================= */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+/******************aqui se empieza*********************************/
+.header{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+.nav{
+  display: none;
+}
+.video{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+.h1{
+  position: absolute;
+  top: 150px;
+  width: 90%;
+  font-size: 38px;
+  text-align: center;
+  color: #ffc14c;
+  z-index: 99;
+}
+.main, .section__contacto{
+  background-color: white;
+  padding: 40px 0 40px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+.main__h4--dorado, .section__servicios__h4--dorado, .section__equipo__h4--dorado, .section__contacto__h4--dorado{
+  margin-bottom: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration-color: #ffc14c;
+}
+.main__h4, .section__servicios__h4, .section__equipo__h4, .section__contacto__h4{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.main__h3{
+  text-transform: uppercase;
+}
+.main__p{
+  margin: 26px 0;
+}
+.main__buttom{
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 2px solid #ffc14c;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.section{
+  background-color: #121215;
+}
+.section:nth-child(2n){
+  background-color: white;
+}
+.section__servicios{
+  padding: 40px 0 40px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  color: white;
+}
+.section__equipo{
+  background-color: white;
+  padding: 40px 0 40px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+.section__equipo__contenedor{
+  width: 90%;
+}
+.section__equipo___img{
+  filter: grayscale(100%);
+}
+.section__suscribete{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.section__suscribete__h2{
+  width: 90%;
+  text-align: center;
+  margin-top: 50px;
+ color: white;
+}
+.section__suscribete__input{
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.section__suscribete__buttom{
+  margin: 40px 0 40px 0;
+  color: #ffc14c;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 2.5px solid #ffc14c;
+  padding: 15px 35px 15px 35px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+.section__suscribete__buttom:hover{
+  color: #121215;
+  border: 2.5px solid #ffc14c;
+  background: #ffc14c;
+}
+.section__contacto__h3{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.section__contacto__form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section__contacto__input{
+  margin-top: 10px;
+  text-align: center;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  width: 100%;
+}
+.section__contacto__label{
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+ .section__contacto__buttom{
+   margin: 30px 0 10px 0;
+   text-transform: uppercase;
+   font-size: 12px;
+   border: 2.5px solid #ffc14c;
+   padding: 15px 35px 15px 35px;
+   cursor: pointer;
+   text-align: center;
+   transition: 0.5s;
+ }
+.footer{
+  background: #121215;
+  width: 100%;
+}
+.footer__p{
+  margin: 0px;
+  text-align: center;
+  color: white;
+  padding: 15px 0 15px 0;
+}
+@media only screen and (min-width: 425px) {
+ .h1{
+   font-size: 50px;
+ }
+}
+@media only screen and (min-width: 767px) {
+.h1{
+  top: 100px;
+  font-size: 60px;
+    z-index: 99;
+}
+.video{
+  height: auto;
+  margin-bottom: 10px;
+  z-index: 1
+}
+.main, .section__servicios, .section__equipo, .section__contacto{
+    width: 65%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.main__h4, .section__servicios__h4, .section__equipo__h4, .section__contacto__h4{
+  width: 60%;
+}
+.main__h4--dorado, .section__servicios__h4--dorado, .section__equipo__h4--dorado, .section__contacto__h4--dorado{
+  width: 40%;
+}
+.main__h3, .main__p, .section__contacto__h3{
+  width: 60%;
+  padding-left: 40%;
+}
+.main__buttom{
+  text-align: center;
+  width: 60%;
+  margin: 0 40% 0 40%;
+  padding: 10px;
+  width: 20%;
+  margin-bottom: 10px;
+}
+.main__buttom:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  border: 2px solid black;
+}
+.section__servicios__contenedor, .section__equipo__contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+.section__servicios__p{
+  width: 25%;
+  flex-wrap: wrap;
+  padding-left: 3%;
+  margin-left: 6%;
+}
+.section__servicios__p:nth-child(odd), .section__equipo__p:nth-child(odd){
+  width:  25%;
+  padding-left: 33%;
+  flex-wrap: wrap;
+}
+.section__equipo___img{
+  width: 100%;
+}
+.section__equipo__p{
+  width: 100%;
+  text-align: center;
+}
+.section__equipo__contenedor{
+  width: 45%;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section__equipo__contenedor:nth-child(1n){
+ margin-right: 10%;
+}
+.section__equipo__contenedor:nth-child(2n){
+ margin-right: 0;
+}
+.section__suscribete{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section__suscribete__input{
+width: 30%;
+margin-top: 0px;
+}
+.section__suscribete__buttom{
+  width: 10%;
+  margin-top: 40px;
+      padding: 12px 35px 12px 35px;
+}
+.section__contacto__form{
+  width: 60%;
+    padding-left: 40%;
+}
+.section__contacto__label{
+ padding: 10px 0 10px 0;
+}
+}
+@media only screen and (min-width: 1240px) {
+  .h1{
+    top: 300px;
+  }
+
+}
