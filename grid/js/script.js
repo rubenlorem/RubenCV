@@ -1,6 +1,10 @@
-setTimeout(function(){ 
-    alert("Web tributo a la protectora las muy perras www.lasmuyperras.com"); 
-}, 1000);
+window.addEventListener('load', () => {
+    setTimeout(function(){ 
+        alert("Web tributo a la protectora las muy perras www.lasmuyperras.com"); 
+    }, 1000);
+
+})
+
 
 const i = document.getElementById('1');
 const ii = document.getElementById('2');
