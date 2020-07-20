@@ -159,6 +159,7 @@ img {
   box-sizing: border-box;
   background-position: center;
   object-fit: cover;
+  transition: filter 0.3s ease;
 }
 .wrapper__img:hover{
   cursor: pointer;
