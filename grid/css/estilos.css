@@ -179,6 +179,9 @@ img {
   margin: 40px 0 20px 0;
   font-size: 18px;
 }
+.cierre{
+  display: none;
+}
 
 .menuresponsive{
   display: flex;
@@ -274,7 +277,7 @@ img {
     padding: 10px 20px;
   }
   .contenedor{
-   /* display: none;*/
+    /* display: none;*/
     position: fixed;
     top: 5%;
     left: 5%;
@@ -295,6 +298,7 @@ img {
     background-size: contain;
   }
   .cierre{
+    display: inline;
     position: absolute;
     font-size: 35px;
     right: 16px;
