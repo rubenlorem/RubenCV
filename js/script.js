@@ -11,7 +11,8 @@ burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
 })
 /*refrecar web*/
-window.addEventListener("resize", myFunction);
+const header = document.getElementById('header');
+header.addEventListener("resize", myFunction);
 function myFunction() {
     window.location.reload(true);
 }
