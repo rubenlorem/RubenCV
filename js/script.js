@@ -11,11 +11,12 @@ burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
 })
 /*refrecar web*/
-const header = document.getElementById('header');
-header.addEventListener("resize", myFunction);
-function myFunction() {
-    window.location.reload(true);
-}
+window.addEventListener('load', () =>{
+    window.addEventListener("resize", myFunction);
+    function myFunction() {
+      window.location.reload(true);
+    }
+})
 /*Enlaces web*/
 const grid1 = document.getElementsByClassName('grid1'),
       grid2 = document.getElementsByClassName('grid2'),
