@@ -14,7 +14,7 @@ burger.addEventListener('click', () =>{
 window.addEventListener('load', () =>{
     window.addEventListener("resize", myFunction);
     function myFunction() {
-      window.location.reload(true);
+      document.location.reload(true);
     }
 })
 /*Enlaces web*/
