@@ -10,13 +10,17 @@ const burger = document.getElementById('burger'),
 burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
 })
-/*refrecar web*/
-window.addEventListener('load', () =>{
-    window.addEventListener("resize", myFunction);
-    function myFunction() {
-      document.location.reload(true);
-    }
+/*ajustar menu a la resolución de la pantalla sin refrescar*/
+addEventListener("resize", e =>{
+   if(e.target.innerWidth >= 768){
+      nav__ul.classList.remove('desplegable');
+   }
 })
+/*refrecar web
+   window.addEventListener("resize", myFunction);
+    function myFunction() {
+        window.location.reload(true);
+    }*/
 /*Enlaces web*/
 const grid1 = document.getElementsByClassName('grid1'),
       grid2 = document.getElementsByClassName('grid2'),
