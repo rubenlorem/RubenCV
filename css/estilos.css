@@ -154,7 +154,7 @@ img {
 .wrapper__img{
   min-height: 240px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #262626;
   box-sizing: border-box;
   background-position: center;
@@ -460,6 +460,9 @@ img {
     width: 745px;
     margin: 0 auto;
   }
+  .about__texto::after{
+    top: 50px;
+  }
   .article{
     width: 248.33px;
     height: 344.81px;
@@ -511,9 +514,6 @@ img {
   }
   .about__texto{
     margin: 16.2px auto;
-  }
-  .about__texto::after{
-    top: 40px;
   }
   .article{
     height: auto;
