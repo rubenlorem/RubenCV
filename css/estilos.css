@@ -25,7 +25,8 @@ img {
   clip-path: polygon(100% 0, 100% 85%, 75% 100%, 25% 100%, 0 85%, 0% 0%)
 }
 .h1{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: white;
   margin-top: 75px;
   font-size: 43px;
