@@ -212,7 +212,8 @@ template {
   height: 79vh;
 }
 .h1{
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 47px;
   margin-top: 70px;
