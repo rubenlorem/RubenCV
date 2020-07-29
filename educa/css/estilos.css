@@ -192,8 +192,9 @@ template {
   width: 100%;
   display: flex;
   justify-content: center;
+  word-break: break-all;
   color: white;
-  font-size: 19px;
+  font-size: 16px;
 }
 .navmain{
   width: 100%;
@@ -519,6 +520,11 @@ template {
    text-align: center;
    margin: 20px 0;
    color: white;
+ }
+ @media (min-width: 375px){
+ .miniheader__p{
+ font-size: 18px;
+ }
  }
 @media (min-width: 480px){
   .header{
