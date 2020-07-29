@@ -189,6 +189,7 @@ template {
   padding: 7px 0;
 }
 .miniheader__p{
+  width: 100%;
   display: flex;
   justify-content: center;
   color: white;
