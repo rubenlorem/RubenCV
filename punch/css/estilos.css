@@ -1,0 +1,149 @@
+﻿/*************Boiler plate de Ruben Marquez*****************************/
+/*esta hoja de estilos intenta seguir seguir la metodologia BEM
+ para evitar problemas de especifidad*******/
+/*******************Control tipografias y paleta*********************************/
+/***********************Reset de elementos***********************************/
+*{
+	overflow-x: hidden;
+	overflow-wrap: break-word;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+/******************aqui se empieza*********************************/
+/*@media (min-width: 700px)*/
+.body{
+  margin: 0px;
+}
+.wrapper{
+  font-family: 'Recursive', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.main{
+ width: 100%;
+}
+.video{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video__efecto{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #00f, #f00);
+  opacity: 0.4;
+}
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  position: absolute;
+}
+.contenedor__logo{
+  color: white;
+  margin-top: 26px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.contenedor__h1{
+  color: white;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+.contenedor__h2{
+  color: white;
+  margin-left: 20px;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.contenedor__p{
+  color: white;
+  margin-left: 20px;
+  font-size: 19px;
+  max-width: 280px;
+}
+.contenedor__btn{
+  color: #333333;
+  font-weight: 600;
+  max-width: 120px;
+  padding: 5px 0;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.nav{
+  position: relative;
+  width: 0%;
+  font-size: 22px;
+}
+.nav:after{
+  content: 'X';
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 35px;
+  color: #ffffff;
+}
+.nav__ul{
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.nav__li{
+  margin: 50px 0 0 0;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@media (min-width: 300px) and (orientation: landscape) {
+.video{
+  height: 538px;
+}
+.video__efecto{
+  height: 538px;
+}
+}
+@media (min-width: 425px){
+
+}
+@media (min-width: 767px){
+.contenedor{
+  width: 100%;
+  }
+.contenedor__h1{
+  font-size: 70px;
+}  
+.contenedor__p{
+  max-width: 50%;
+  font-size: 21px;
+}
+}
+@media (min-width: 1366px){
+ .contenedor__h1{
+  margin-top: 90px;
+  margin-bottom: 10px;
+ }
+ .contenedor__h2{
+  margin-top: -20px;
+ }  
+ .contenedor__p{
+   margin-top: 40px;
+  margin-bottom: 40px;
+ }
+}
