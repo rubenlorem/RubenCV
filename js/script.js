@@ -40,11 +40,12 @@ grid4[0].addEventListener('click',() =>{
     window.open('https://rubenlorem.github.io/RubenCV/axis/', '_blank');
 })
 grid5[0].addEventListener('click',() =>{
+    window.open('https://rubenlorem.github.io/RubenCV/corp/', '_blank');
+}) 
+grid6[0].addEventListener('click',() =>{
     window.open('https://rubenlorem.github.io/RubenCV/designer/', '_blank');
 })
-grid6[0].addEventListener('click',() =>{
-    window.open('https://rubenlorem.github.io/RubenCV/corp/', '_blank');
-})
+
 
 /*Efecto portafolio*/
 const btn1 = document.getElementById('btn1'),
