@@ -245,14 +245,15 @@ template {
   background-color: white;
   box-shadow: 0px 0px 22px 4px rgba(0,0,0,0.38);
   border-radius: 7px;
-  padding: 15px;
   border-bottom: 3px solid #E91B4B;
 }
 .main__h2{
+  margin: 0 15px;
  font-size: 17px;
  text-align: center;
 }
 .main__p{
+  margin: 0 15px;
   padding-top: 17px;
   text-align: justify;
 }
