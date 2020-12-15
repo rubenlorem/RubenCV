@@ -183,10 +183,6 @@ template {
 /******************aqui se empieza*********************************/
 	/*E91B4B rojo
     030D28     azul */
-body > *{
-  overflow-y: hidden;
-  color: #e91b4b;
-}
 .miniheader{
   width: 100%;
   background: #E91B4B;
@@ -257,7 +253,7 @@ body > *{
  text-align: center;
 }
 .main__p{
-  margin-top: 17px;
+  padding-top: 17px;
   text-align: justify;
 }
 .main__ul{
