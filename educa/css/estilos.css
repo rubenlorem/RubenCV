@@ -212,7 +212,8 @@ template {
 .header{
   background-image: url("../img/heroxs.jpg");
   background-position: center;
-  height: 79vh;
+  background-size: cover;
+  height: 400px;
 }
 .h1{
   text-align: center;
@@ -531,19 +532,13 @@ template {
     background-image: url("../img/heros.jpg");
    }
  .main__ul{ 
- padding-left: 40px;
+ padding-left: 40px; 
  padding-right: 40px;
  }
  }
 @media (min-width: 630px) {
  .h1{
    margin-top: 95px;
- }
- .main{
-   max-width: 650px;
- }
- .main__ul{
-   flex-wrap: nowrap;
  }
  .equipo__h2{
    margin: 60px 0 60px 0;
@@ -586,6 +581,15 @@ template {
 }
 }
 @media (min-width: 768px){
+  .main{
+    max-width: 650px;
+  }
+
+  .main__ul{ 
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
   .curso__wrapper{
   flex-direction: row;
   flex-wrap: wrap;
