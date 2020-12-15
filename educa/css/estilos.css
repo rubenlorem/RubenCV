@@ -183,6 +183,9 @@ template {
 /******************aqui se empieza*********************************/
 	/*E91B4B rojo
     030D28     azul */
+body > *{
+  overflow-y: hidden;
+}
 .miniheader{
   width: 100%;
   background: #E91B4B;
