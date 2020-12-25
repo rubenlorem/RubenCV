@@ -170,6 +170,9 @@ background-position: center;
 object-fit: cover;
 transition: filter 0.3s ease;
 }
+.wrapper__img:hover{
+  cursor: pointer;
+}
 .about__titulo{
   width: 90%;
   margin: 30px auto 20px auto;
@@ -295,7 +298,7 @@ transition: filter 0.3s ease;
   animation: bounce 2.2s ease;
   }
   @keyframes bounce {
-    0% {margin-top: -200px;}
+    0% {margin-top: -1000px;}
     100% {margin-top: 0px;}
   }
   @media (min-width: 375px){
@@ -356,10 +359,11 @@ transition: filter 0.3s ease;
   .h1{
    /* font-size: 85px;*/
   }
+  /*
   @keyframes bounce {
     0% {margin-top: -135px;}
     100% {margin-top: 0px;}
-  }
+  }*/
   .h2{
     font-size: 23px;
   }
