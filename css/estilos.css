@@ -314,14 +314,14 @@ transition: filter 0.3s ease;
    font-size: 17px;
  }
 }
-@media (min-width: 550px){
+/*@media (min-width: 650px){
   .galeria__ul{
     flex-direction: row;
   }
   .galeria__li{
     width: auto;
   }
-}
+}*/
 @media (min-width: 768px){
   .burger{
     display: none;
@@ -374,13 +374,15 @@ transition: filter 0.3s ease;
     justify-content: center;
   }
   .galeria__ul{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
     padding: 25px 0 10px 0;
     margin: 0;
     margin: 32.4px 0 16.2px 0;
-    width: 70%;
-    justify-content: space-between;
   }
   .galeria__li{
+    width: auto;
     padding: 15px 15px;
   }
   .__texto::after{
