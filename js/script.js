@@ -5,9 +5,16 @@ const titulo = document.getElementById('titulo');
 const burger = document.getElementById('burger'),
  nav__ul = document.getElementById('nav__ul');
 
-burger.addEventListener('click', () =>{
+ burger.addEventListener('click', () =>{
  nav__ul.classList.toggle('desplegable');
+
+ if(nav__ul.classList.contains('desplegable')){
+ document.getElementById("burger").src="img/menux.svg";
+ } else{
+    document.getElementById("burger").src="img/menu.svg";
+ } 
 })
+
 /*ajustar menu a la resolución de la pantalla sin refrescar*/
 addEventListener("resize", e =>{
    if(e.target.innerWidth >= 768){
