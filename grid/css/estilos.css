@@ -226,7 +226,7 @@ img {
     display: none;
   }
   .nav__ul{
-    width: 614px;
+    width: 640px;
     display: flex;
     flex-direction: row;
     margin: 60px auto 40px auto;
