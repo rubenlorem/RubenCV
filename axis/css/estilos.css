@@ -189,7 +189,7 @@ template {
  }
  .header{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: url("../img/header.jpg");
   display: flex;
   flex-direction: column;
@@ -197,8 +197,8 @@ template {
   justify-content: center;
   color: white;
   background-position: center;
-  background-attachment: fixed;
-}
+  background-size: cover;
+ }
 .header__h1{
   font-size: 43px;
   text-align: center;
@@ -223,7 +223,7 @@ template {
   cursor: pointer;
   transition:  background-color .6s;
 }
-  .servicios{
+  .servicios, .equipo{
   width: 100%;
   padding: 0 0 15px 0;
   display: flex;
@@ -231,26 +231,26 @@ template {
   justify-content: center;
   align-items: center;
 }
-.servicios__grafico{
+.servicios__grafico, .equipo__grafico{
    margin-left: 0px;
     margin: auto;
     width: 85%;
 }
-.servicios__article{
+.servicios__article, .equipo__article{
  width: 100%;
 }
-.servicios__article__h2{
+.servicios__article__h2, .equipo__article__h2{
   text-align: center;
     padding: 0px;
     margin: 0px;
 }
-.servicios__article__p{
+.servicios__article__p, .equipo__article__p{
    padding-left: 0px;
     width: 80%;
     margin: 30px auto 30px auto;
     text-align: justify;
 }
-.servicios__article__button{
+.servicios__article__button, .equipo__article__button{
   width: 80%;
 background-color: #ee707d;
   color: white;
@@ -261,53 +261,7 @@ background-color: #ee707d;
   margin-left: 9%;
   padding-bottom: 10px;
 }
-.servicios__article__button:hover{
-  background-color: #f2abb8;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.equipo{
-  height: 100%;
-  width: 100%;
-  background: rgb(232,236,248);
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
-}
-.equipo__article{
-  width: 100%;
-  display: flex;
- justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.equipo__img{
-  width: 80%;
-  display: block;
-  margin: auto;
-}
-.equipo__article__h2{
-   text-align: center;
-   padding: 0px;
-   margin: 0px;
-}
-.equipo__article__p{
-  padding-left: 0px;
-    width: 80%;
-    margin: 30px auto 30px auto;
-    text-align: justify;
-}
-.equipo__article__button{
-background-color: #ee707d;
-  color: white;
-  padding: 10px 35px 10px 35px;
-  font-size: 20px;
-  border-style: none;
-  transition: 0.6s;
-}
-.equipo__article__button:hover{
+.servicios__article__button:hover, .equipo__article__button:hover{
   background-color: #f2abb8;
     border-radius: 15px;
     cursor: pointer;
@@ -449,20 +403,17 @@ margin: 30px auto;
 font-size: 20px;
 }
 @media screen and (min-width: 425px) {
-.servicios__article__button{
+  .servicios, .equipo{
+    padding: 0 0 17px 0;
+  }
+  .servicios__article__button, .equipo__article__button{
   display: block;
   max-width: 230px;
   margin: auto;
 }
-.servicios{
-  padding: 0 0 17px 0;
-}
-.servicios__grafico{
+.servicios__grafico, .equipo__grafico{
   max-width: 395px;
   max-height: 275px;
-}
-.equipo__img{
- width: 100%;
 }
 }
 @media screen and (min-width: 600px) {
@@ -471,26 +422,26 @@ font-size: 20px;
 }
 .header__p{
   font-size: 35px;
-}
-.servicios{
+}/*
+.servicios, .equipo{
   width: 100%;
-  height: 66vh;
+  margin: 30px 0;
  flex-direction: row;
 }
-.servicios__grafico{
+.servicios__grafico, .equipo__grafico{
  height: auto;
  width: 300px;
 }
-.servicios__article{
+.servicios__article, .equipo__article{
  width: 48%;
 }
-.servicios__article__h2{
+.servicios__article__h2, .equipo__article__h2{
   text-align: left;
 }
-.servicios__article__p{
+.servicios__article__p, .equipo__article__p{
   width: 100%;
 }
-.servicios__article__button{
+.servicios__article__button, .equipo__article__button{
   width: auto;
 background-color: #ee707d;
   color: white;
@@ -501,33 +452,15 @@ background-color: #ee707d;
   margin: 0px;
   transition:  background-color .6s;
 }
-.servicios__article__button:hover{
+.servicios__article__button:hover, .equipo__article__button:hover{
     border-radius: 15px;
     cursor: pointer;
     transition:  background-color .6s;
-}
-.equipo{
-  flex-direction: row;
-}
-.equipo__article{
-    display: block;
-}
-.equipo__article__h2{
-  text-align: left;
-  margin: 30px;
-}
-.equipo__article__p{
-  text-align: left;
-  margin-left: 30px;
-}
-.equipo__article__button{
-  margin-left: 30px;
-}
+}*/
 .cliente{
   flex-direction: column;
   align-items: flex-start;
-  height: 66vh;
-  padding-left: 8%;
+  padding-left: 10%;
 }
 .cliente__ul{
   flex-direction: row;
@@ -545,6 +478,7 @@ background-color: #ee707d;
 .prensa{
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: inherit;
     padding: 25px 0 25px 0;
 }
 .prensa__article{
@@ -552,12 +486,11 @@ background-color: #ee707d;
 }
 .informacion{
   width: 100%;
-  height: 50vh;
  flex-direction: row;
 }
 .informacion__article{
   width: 100%;
-  padding: 0 0 0 16%;
+  padding: 30px 0 30px 16%;
 
 }
 .informacion__article--peque{
@@ -591,28 +524,30 @@ background-color: #ee707d;
     cursor: pointer;
     transition:  border-radius .6s;
 }
-}*/
+}
 @media screen and (min-width: 700px) {
-  .servicios__article__p{
+  .servicios{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .equipo{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  /*
+  .servicios__article__p, .equipo__article__p{
   width: 80%;
   text-align: left;
   margin: 30px 0 30px 0;
   }
-  .servicios__grafico{
+  .servicios__grafico, .equipo__grafico{
     width: 340px;
-  }
-  .equipo__article__h2{
-    margin-left: 16%;
-  }
-  .equipo__article__p{
-    margin-left: 16%;
-  }
-  .equipo__img{
-    max-width: 400px;
-  }
-  .equipo__article__button{
-    margin-left: 16%;
-  }
+  }*/
   .prensa__article{
     width: 33%;
   }
@@ -633,6 +568,7 @@ background-color: #ee707d;
     display: flex;
     align-items: center;
     height: 60px;
+    margin-right: 5%;
 }
 .nav__ulli{
   display: block;
@@ -642,7 +578,7 @@ background-color: #ee707d;
 .nav__ulli--logo{
   display: block;
   width: auto;
-  margin: 0 auto 0 60px;
+  margin: 0 auto 0 10%;
 }
 
 .nav__ulli--logo img{
@@ -679,13 +615,19 @@ background-color: #ee707d;
    box-shadow:  0px 4px 0px 0px #ee707d;
    cursor: pointer;
 }
-.servicios__grafico{
-  margin-left: 11%;
-}
 .prensa{
   padding: 50px 0 50px 0;
 }
 .prensa__article{
   width: 24%;
 }
+}
+@media screen and (min-width: 1920px){
+  .equipo, .cliente{
+   max-width: 1500px;
+  }
+  .cliente{
+  margin-left: 0;
+  align-items: center;  
+ }
 }
