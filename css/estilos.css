@@ -109,6 +109,7 @@ img {
   text-align: center;
   overflow-y: hidden;
   position: relative;
+  transition: all 0.4s ease;
 }
 .galeria__li::after{
   content: '';
@@ -142,9 +143,6 @@ img {
     transition: 0.4s;
     cursor: pointer;
   }
-.galeria__li:active{
- text-decoration: underline;
-}
 .galeria__li:hover::before{
     width: 25px;
     height: 25px;
@@ -292,6 +290,10 @@ transition: filter 0.3s ease;
   height: 170px;
 }
 .seleccionado{
+  background-color: #262626;
+  color: white;
+}
+.oscurecido{
   filter: grayscale(1);
 }
 .bajar{
