@@ -21,11 +21,7 @@ addEventListener("resize", e =>{
       nav__ul.classList.remove('desplegable');
    }
 })
-/*refrecar web
-   window.addEventListener("resize", myFunction);
-    function myFunction() {
-        window.location.reload(true);
-    }*/
+
 /*Enlaces web*/
 const grid1 = document.getElementsByClassName('grid1'),
       grid2 = document.getElementsByClassName('grid2'),
@@ -53,45 +49,51 @@ grid6[0].addEventListener('click',() =>{
     window.open('https://rubenlorem.github.io/RubenCV/designer/', '_blank');
 })
 
+/*Botones galeia*/
+const otro = document.getElementsByClassName('otro'),
+cor = document.getElementsByClassName('cor'),
+cv = document.getElementsByClassName('cv');
 
-/*Efecto portafolio*/
-const btn1 = document.getElementById('btn1'),
- btn2 = document.getElementById('btn2'),
- btn3 = document.getElementById('btn3'),
- cv = document.getElementsByClassName('cv'),
- cor = document.getElementsByClassName('cor'),
-otro = document.getElementsByClassName('otro');
 
-btn1.addEventListener('click',() =>{
-  for(i=0; i < cv.length ; i++){
-      cv[i].classList.remove('seleccionado');
-  }
-  for(i=0; i < cor.length ; i++){
-    cor[i].classList.add('seleccionado');
-}
-for(i=0; i < otro.length ; i++){
-    otro[i].classList.add('seleccionado');
-}
+btn1.addEventListener('mouseover',() =>{
+    btn1.classList.add('seleccionado');
+    btn2.classList.remove('seleccionado');
+    btn3.classList.remove('seleccionado');
+        for(i=0; i < cor.length ; i++){
+            cor[i].classList.add('oscurecido');
+          }
+        for(i=0; i < cv.length ; i++){
+           cv[i].classList.remove('oscurecido');
+       }
+       for(i=0; i < otro.length ; i++){
+         otro[i].classList.add('oscurecido');
+       }
 })
-btn2.addEventListener('click',() =>{
-    for(i=0; i < cor.length ; i++){
-        cor[i].classList.remove('seleccionado');
-    }
-    for(i=0; i < cv.length ; i++){
-        cv[i].classList.add('seleccionado');
-    }
-    for(i=0; i < otro.length ; i++){
-        otro[i].classList.add('seleccionado');
-    }
+btn2.addEventListener('mouseover',() =>{
+    btn2.classList.add('seleccionado');
+    btn1.classList.remove('seleccionado');
+    btn3.classList.remove('seleccionado');
+        for(i=0; i < cor.length ; i++){
+            cor[i].classList.remove('oscurecido');
+          }
+        for(i=0; i < cv.length ; i++){
+           cv[i].classList.add('oscurecido');
+       }
+       for(i=0; i < otro.length ; i++){
+         otro[i].classList.add('oscurecido');
+       }
 })
-btn3.addEventListener('click',() =>{
-    for(i=0; i < otro.length ; i++){
-        otro[i].classList.remove('seleccionado');
-    }
-    for(i=0; i < cv.length ; i++){
-        cv[i].classList.add('seleccionado');
-    }
-    for(i=0; i < cor.length ; i++){
-        cor[i].classList.add('seleccionado');
-    }
+btn3.addEventListener('mouseover',() =>{
+    btn3.classList.add('seleccionado');
+    btn1.classList.remove('seleccionado');
+    btn2.classList.remove('seleccionado');
+        for(i=0; i < cor.length ; i++){
+            cor[i].classList.add('oscurecido');
+          }
+        for(i=0; i < cv.length ; i++){
+           cv[i].classList.add('oscurecido');
+       }
+       for(i=0; i < otro.length ; i++){
+         otro[i].classList.remove('oscurecido');
+       }
 })
