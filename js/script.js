@@ -34,7 +34,7 @@ grid1[0].addEventListener('click',() =>{
     window.open('https://rubenlorem.github.io/RubenCV/anton/', '_blank');
 })
 grid2[0].addEventListener('click',() =>{
-    window.open('https://rubenlorem.github.io/RubenCV/educa/', '_blank');
+    window.open('https://rubenlorem.github.io/RubenCV/mousemove/', '_blank');
 })
 grid3[0].addEventListener('click',() =>{
     window.open('https://rubenlorem.github.io/RubenCV/grid/', '_blank');
