@@ -14,23 +14,21 @@ const header = document.getElementById('header'),
     azul = "#12adbd",
     copy1 = document.getElementById('copy1'),
     copy2 = document.getElementById('copy2'),
-    copy3 = document.getElementById('copy3');
-
+    copy3 = document.getElementById('copy3'),
+    copybtn = document.getElementById('copy__btn');
 header.addEventListener('mousemove', (e) => {
     let xpos = e.pageX;
     let ypos = e.pageY
- //div.style.transform = `rotate3d(${ypos*0.07},${xpos*0.01},0,-20deg)`;
+   // let ancho = screen.width;
+    //let alto = screen.height;
  div.style.transform = `perspective(600px) rotateX(${xpos/160}deg) rotateY(${ypos/80}deg)`;
- //https://www.youtube.com/watch?v=ds8ymUkqvmo
-// div.style.transform = `skew(${ypos*0,5}deg ,${xpos*0,5}deg)`;
- //  div.style.transform = `rotateY(${xpos/20}deg)`;
- //div.style.transform = `translateZ(${xpos}px)`;
- //transform: translateZ(50px);
-// div.style.transform = `translate(${ypos/5}px,${xpos/5}px)`
   })
 uno.addEventListener('click',() =>{
  copy.style.display = `flex`;
  body.style.backgroundImage = "url('img/fondo.jpg')";
+ if (screen.width < 900) {
+ copybtn.style.display = `block`
+ }
  div.style.borderColor = `${amarillo}`;
  div.style.boxShadow = `0px 0px 30px 0px rgb(255 228 32)`;
  btn.style.borderColor = `${amarillo}`;
@@ -43,6 +41,9 @@ uno.addEventListener('click',() =>{
 dos.addEventListener('click',() =>{
   copy.style.display = `flex`;
   body.style.backgroundImage = "url('img/fondo2.jpg')";
+  if (screen.width < 900) {
+    copybtn.style.display = `block`
+    }
   div.style.borderColor = `${verde}`;
   div.style.boxShadow = `0px 0px 30px 0px rgb(58 214 58)`;
   btn.style.borderColor = `${verde}`;
@@ -57,6 +58,9 @@ dos.addEventListener('click',() =>{
 tres.addEventListener('click',() =>{
   copy.style.display = `flex`;
   body.style.backgroundImage = "url('img/fondo3.jpg')";
+  if (screen.width < 900) {
+    copybtn.style.display = `block`
+    }
   div.style.borderColor = `${azul}`;
   div.style.boxShadow = `0px 0px 30px 0px rgb(32 162 255)`;
   btn.style.borderColor = `${azul}`;
@@ -71,6 +75,9 @@ tres.addEventListener('click',() =>{
 cuatro.addEventListener('click',() =>{
   copy.style.display = `flex`;
   body.style.backgroundImage = "url('img/fondo4.jpg')";
+  if (screen.width < 900) {
+    copybtn.style.display = `block`
+    }
   div.style.borderColor = `${rojo}`;
   div.style.boxShadow = `0px 0px 30px 0px rgb(132 50 65)`;
   btn.style.borderColor = `${rojo}`;
@@ -82,7 +89,15 @@ cuatro.addEventListener('click',() =>{
   copy3.style.display = "block";
   copy3.innerHTML = "";
  })
+ copybtn.addEventListener('click', () =>{
+  copy.style.display = `none`;
+  copybtn.style.display = `none`;
+ })
  btn.addEventListener('click',() =>{
+  if (screen.width < 900) {
+    copybtn.style.display = `block`
+    }
+  copy.style.display = `flex`;
   copy1.style.display = "block";
   copy1.innerHTML = "Contacto: C/ Guadalajara 17 email: prueba@email.com";
   copy2.style.display = "block";
@@ -90,6 +105,3 @@ cuatro.addEventListener('click',() =>{
   copy3.style.display = "block";
   copy3.innerHTML = "";
  })
-/*div.addEventListener('mousemove', () => {
-    //console.log('me nuevo en el div');
-})*/
