@@ -212,14 +212,14 @@ transition: filter 0.3s ease;
 .imagen{
   position: relative;
   width: 100%;
-  height: 250px;
+  min-height: 250px;
   background-image: url("../img/programador web movil.jpg");
-  background-position: center top;
-  /*background-size: cover;*/
-  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  /* margin: 0 0 70px 0;*/
-}
+}/*
 .imagen::after{
   content: '';
   position: absolute;
@@ -227,7 +227,7 @@ transition: filter 0.3s ease;
   left: 0;
   width: 100%;
   height: 100%;
-}
+}*/
 .wrapper__article{
   width: 80%;
   margin: 70px auto 0 auto;
@@ -414,6 +414,7 @@ transition: filter 0.3s ease;
   .imagen{
     height: 400px;
     margin-bottom: 90px;
+    background-size: cover;
     background-image: url("../img/programador web.jpg");
   }
   .wrapper{
