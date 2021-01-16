@@ -216,6 +216,7 @@ transition: filter 0.3s ease;
   background-image: url("../img/programador web movil.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
  /* margin: 0 0 70px 0;*/
 }
