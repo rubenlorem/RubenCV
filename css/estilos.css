@@ -212,7 +212,7 @@ transition: filter 0.3s ease;
 .imagen{
   position: relative;
   width: 100%;
-  min-height: 250px;
+  height: 250px;
   background-image: url("../img/programador web movil.jpg");
   background-attachment: fixed;
   background-position: center;
