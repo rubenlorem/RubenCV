@@ -210,13 +210,22 @@ transition: filter 0.3s ease;
   font-size: 30px;
 }
 .imagen{
+  position: relative;
   width: 100%;
-  height: 330px;
+  height: 250px;
   background-image: url("../img/programador web movil.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   margin: 0 0 70px 0;
+}
+.imagen::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .wrapper__article{
   width: 80%;
