@@ -217,7 +217,7 @@ transition: filter 0.3s ease;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-size: cover;*/
+  background-size: cover;
  /* margin: 0 0 70px 0;*/
 }/*
 .imagen::after{
