@@ -328,8 +328,6 @@ transition: filter 0.3s ease;
   height: 170px;
 }
 .menumovil{
-  padding: 8px;
-  border-radius: 50%;
   background-color: #262626;
 }
 .oculto{
