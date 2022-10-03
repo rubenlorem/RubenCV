@@ -59,13 +59,16 @@ html{
 .burger{
   width: 40px;
   height: 40px;
+  padding: 8px;
   /*min-height: 40px;*/
   margin: 10px auto 10px auto;
   overflow-y: hidden;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-content: space-around;
   justify-content: center;
+  transition: 0.4s ease-in-out;
  
 }
 .burger__li{
@@ -324,18 +327,26 @@ transition: filter 0.3s ease;
 .desplegable{
   height: 170px;
 }
+.menumovil{
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #262626;
+}
 .oculto{
   display: none;
 }
 .giro{
   transform: rotatez(45deg);
   transform-origin: 50% 50%;
-  margin: -1px;
+  margin: 1px;
+  background-color: white;
 }
 .giro2{
+  margin: 0;
+  margin-top: -4px;
   transform: rotatez(-45deg);
   transform-origin: 50% 50%;
-  margin: 0;
+  background-color: white;
 }
 .seleccionado{
   background-color: #262626;
