@@ -5,7 +5,8 @@ const titulo = document.getElementById('titulo');
 const burger = document.getElementById('burger'),
  nav__ul = document.getElementById('nav__ul'),
  burger__limedio = document.getElementById('burger__limedio'),
- burger__li1 = document.getElementById('burger__li1');
+ burger__li1 = document.getElementById('burger__li1'),
+ burger__li2 = document.getElementById('burger__li2');
  
 
  burger.addEventListener('click', () =>{
@@ -13,6 +14,8 @@ const burger = document.getElementById('burger'),
  burger__limedio.classList.toggle('oculto');
  burger__li1.classList.toggle('giro');
  burger__li2.classList.toggle('giro2');
+ burger.classList.toggle('menumovil');
+
 
  if(nav__ul.classList.contains('desplegable')){
  document.getElementById("burger").src="img/menux.svg";
